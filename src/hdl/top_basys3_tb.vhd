@@ -96,7 +96,7 @@ begin
         w_sw <= o"1"; wait for 10 ns;
         assert w_led = "01" report "bad o1" severity failure;
 	    w_sw <= o"2"; wait for 10 ns;
-        assert w_led = "00" report "bad o2" severity failure;
+        assert w_led = "01" report "bad o2" severity failure;
 	    w_sw <= o"3"; wait for 10 ns;
         assert w_led = "10" report "bad o3" severity failure;
         w_sw <= o"4"; wait for 10 ns;
